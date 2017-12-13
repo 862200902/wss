@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+        function person(){
+            this.name="吉云";
+            this.age='2';
+        }
+        person.prototype.teach=function(){
+
+        }
+        person.prototype.classover=function(){
+            console.log('class is over')
+        }
+        person.prototype.callname=function(){
+
+        }
+
+
+
+
+        person.prototype={
+            constructor:person,//重构prototype属性
+            teach:function(){
+
+            },
+            classover:function(){
+
+            },
+            callname:function(){
+
+            }
+        }
+        var p1=new person()
+        p1.classover();
+//        console.dir(person.prototype)
+//    function 构造函数(){
+//        this.属性1=属性值1;
+//        this.属性2=属性值2;
+//
+//    }
+    构造函数.prototype={
+        方法名:function(){
+
+        },
+        方法名2:function(){
+
+        },
+        constructor:构造函数
+    }
+    var 实例 =new 构造函数();
+    实例.方法名();
+
+</script>
+</html>
